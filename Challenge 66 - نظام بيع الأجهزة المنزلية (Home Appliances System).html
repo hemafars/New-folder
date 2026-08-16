@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let customerName = "hemafars";
+    let divesType = "tv";
+    let divesPrice = 15000;
+    let quantity = 1;
+    let total = divesPrice * quantity
+    let discount = 0;
+    let dilavary = 0;
+    let finalPrice;
+    if (total >= 20000) {
+      discount = total * 0.15
+
+    } else if (total >= 10000) {
+      discount = total * 0.08
+    }
+
+    if (total <= 15000) {
+      dilavary = 300
+    }
+    finalPrice = (total + dilavary) - discount
+
+    console.log(` Customer: ${customerName}`)
+    console.log(` Product: ${divesType}`)
+    console.log(` Quantity: ${quantity}`)
+    console.log(` Total: ${total}`)
+    console.log(` Discount: ${discount}`)
+    console.log(` Delivery: ${dilavary}`)
+    console.log(` Final Price: ${finalPrice}`)
+  </script>
+</body>
+
+</html>
